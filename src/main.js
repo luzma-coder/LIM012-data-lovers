@@ -11,20 +11,26 @@ import data from './data/pokemon/pokemon.js';
 //console.log(example, data);
 //console.log(data);
 
-const btnMostrar = document.getElementById('btn_Mostrar');
-const array_pokemon = data;
+const data_pokemon = document.getElementById('pokemon_Data');
 
+const allPokemon = (data) =>{
+    let info = '';
+    data.pokemon.forEach((obj) => {
+        info += `
+        <div>
+            <img src="${obj.img}">
+            <p>${obj.num}</p>
+            <p>${obj.name}</p>
+            <p>${obj.type}</p>
+        </div>
+        `;
+    });
+    return info;
+};
+
+const btnMostrar = document.getElementById('btn_Mostrar');
 btnMostrar.addEventListener('click', () => {
-    let pokemonData = document.getElementById('pokemon_Data');
-    //pokemonData.innerHTML = 'pokemones'+ data.addEventListener;
-    //console.log(data);
-    //pokemonData.innerHTML = data.pokemon[1].name;
-    for (let i = 0; i < array_pokemon.pokemon.length; i++) {
-        console.log(array_pokemon.pokemon[i].num, array_pokemon.pokemon[i].name);
-        //pokemonData.innerHTML = array_pokemon.pokemon[i].num;
-    }
-    
-    
+    data_pokemon.innerHTML = allPokemon(data);
     
 })
 
