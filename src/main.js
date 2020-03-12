@@ -19,9 +19,10 @@ const allPokemon = (data) =>{
         info += `
         <div class = "pokemonInfo">
             <img src="${obj.img}">
-            <p>${obj.num}</p>
+            <p>#${obj.num}</p>
             <p>${obj.name}</p>
-            <p>${obj.type}</p>
+
+            <p>${obj.type[0]} ${obj.type[1]}</p>
         </div>
         `;
     });

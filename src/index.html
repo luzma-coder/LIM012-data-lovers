@@ -11,7 +11,6 @@
         <a href="index.html"><img src="img/logo_datalovers.png" class="img_logo"></a>
         <nav>
           <ul class="menu">
-            <li id="logo"></li>
             <li><a href="">Pokedex</a></li>
             <li><a href="">Battle</a></li>
             <li><a href="">Event</a></li>
@@ -22,17 +21,27 @@
        
     </header>
     
-    <div>
+    <div class="contenedor1">
       <input type="text" placeholder="Search for Name" class="search_name">
       <select name="select" id="select_type" class="select_filter">
         <option value="">Normal</option>
-        <option value="">Acero</option>
-        <option value="">Agua</option>
-        <option value="">Bicho</option>
-        <option value="">Dragon</option>
-        <option value="">Electrico</option>
-        <option value="">Fantasma</option>
-        <option value="Grass">Grass</option>        
+        <option value="">Fighting</option>
+        <option value="">Flying</option>
+        <option value="">Poison</option>
+        <option value="">Ground</option>
+        <option value="">Rock</option>
+        <option value="">Bug</option>
+        <option value="">Ghost</option>
+        <option value="">Steel</option>
+        <option value="">Fire</option> 
+        <option value="">Water</option> 
+        <option value="">Grass</option> 
+        <option value="">Electric</option> 
+        <option value="">Psychic</option> 
+        <option value="">Ice</option> 
+        <option value="">Dragon</option> 
+        <option value="">Dark</option>
+        <option value="">Fairy</option>  
       </select>
       <select name="select" id="select_egg" class="select_filter">
         <option value="">2 Km</option>
@@ -44,12 +53,17 @@
         <option value="">Kanto</option>
         <option value="">Johto</option>       
       </select>
+
+      <div id="pokemon_Data">
+        <!-- <section>
+          <ul>
+            <li></li>
+          </ul>
+        </section> -->
+      </div>
     </div>
 
-    <div>
-      <button type="button" id="btn_Mostrar">mostrar</button>
-      <div id="pokemon_Data"></div>
-    </div>
+    
 
     <script src="main.js" type="module"></script>
   </body>
