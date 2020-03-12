@@ -17,7 +17,7 @@ const allPokemon = (data) =>{
     let info = '';
     data.pokemon.forEach((obj) => {
         info += `
-        <div>
+        <div class = "pokemonInfo">
             <img src="${obj.img}">
             <p>${obj.num}</p>
             <p>${obj.name}</p>
@@ -28,9 +28,11 @@ const allPokemon = (data) =>{
     return info;
 };
 
+data_pokemon.innerHTML = allPokemon(data);
+
 const btnMostrar = document.getElementById('btn_Mostrar');
 btnMostrar.addEventListener('click', () => {
-    data_pokemon.innerHTML = allPokemon(data);
+    
     
 })
 

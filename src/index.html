@@ -7,20 +7,50 @@
   </head>
   <body>
     <div id="root"></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Logo</a></li>
-        <li><a href="">Pokemon</a></li>
-      </ul>
-    </nav>
+    <header>
+        <a href="index.html"><img src="img/logo_datalovers.png" class="img_logo"></a>
+        <nav>
+          <ul class="menu">
+            <li id="logo"></li>
+            <li><a href="">Pokedex</a></li>
+            <li><a href="">Battle</a></li>
+            <li><a href="">Event</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav> 
+      
+       
+    </header>
+    
+    <div>
+      <input type="text" placeholder="Search for Name" class="search_name">
+      <select name="select" id="select_type" class="select_filter">
+        <option value="">Normal</option>
+        <option value="">Acero</option>
+        <option value="">Agua</option>
+        <option value="">Bicho</option>
+        <option value="">Dragon</option>
+        <option value="">Electrico</option>
+        <option value="">Fantasma</option>
+        <option value="Grass">Grass</option>        
+      </select>
+      <select name="select" id="select_egg" class="select_filter">
+        <option value="">2 Km</option>
+        <option value="">5 Km</option>
+        <option value="">7 Km</option>
+        <option value="">10 Km</option>        
+      </select>
+      <select name="select" id="select_region" class="select_filter">
+        <option value="">Kanto</option>
+        <option value="">Johto</option>       
+      </select>
+    </div>
+
     <div>
       <button type="button" id="btn_Mostrar">mostrar</button>
       <div id="pokemon_Data"></div>
-      <div id="pokemon_Data2"></div>
-      
-      
-
     </div>
+
     <script src="main.js" type="module"></script>
   </body>
 </html>
