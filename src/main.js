@@ -1,39 +1,37 @@
-import { example } from './data.js';
-// import data from './data/injuries/injuries.js';
-// import data from './data/lol/lol.js';
-// import data from './data/patient/patient.js';
+// import { example } from './data.js';
+
 import data from './data/pokemon/pokemon.js';
-//import pokemon from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-// import data from './data/steam/steam.js';
-// import data from './data/worldbank/worldbank.js';
+// console.log(example, data);
 
-//console.log(example, data);
-//console.log(data);
+const typePokemon = (arrayType) => {
+  let styleType = '';
+  for (let i = 0; i < arrayType.length; i += 1) {
+    styleType += `
+        <span class="typeText pok_type_${arrayType[i]}">${arrayType[i]}</span> 
+        `;
+  }
+  return styleType;
+};
 
-const data_pokemon = document.getElementById('pokemon_Data');
-
-const allPokemon = (data) =>{
-    let info = '';
-    data.pokemon.forEach((obj) => {
-        info += `
+const dataPokemon = document.getElementById('pokemon_Data');
+const allPokemon = () => {
+  let info = '';
+  data.pokemon.forEach((obj) => {
+    info += `
         <div class = "pokemonInfo">
             <img src="${obj.img}">
             <p>#${obj.num}</p>
-            <p>${obj.name}</p>
+            <h5>${obj.name[0].toUpperCase()}${obj.name.substring(1)}</h5>
 
-            <p>${obj.type[0]} ${obj.type[1]}</p>
+            <p>${typePokemon(obj.type)}</p>
         </div>
         `;
-    });
-    return info;
+  });
+  return info;
 };
 
-data_pokemon.innerHTML = allPokemon(data);
+dataPokemon.innerHTML = allPokemon();
 
-const btnMostrar = document.getElementById('btn_Mostrar');
-btnMostrar.addEventListener('click', () => {
-    
-    
-})
-
+// const btnMostrar = document.getElementById('btn_Mostrar');
+// btnMostrar.addEventListener('click', () => {
+// });
