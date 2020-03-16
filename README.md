@@ -2,9 +2,9 @@
 
 ## Índice
 
-* [1. Definición del Proyecto](#1-definicion-del-proyecto)
-* [2. Objetivos de Aprendizaje](#3-objetivos-de-aprendizaje)
-* [3. Checklist](#9-checklist)
+* [1. Definición del Proyecto](#1-definición-del-proyecto)
+* [2. Objetivos de Aprendizaje](#2-objetivos-de-aprendizaje)
+* [3. Checklist](#3-checklist)
 
 ***
 
@@ -26,18 +26,18 @@
 
 #### Prototipo de Baja Fidelidad
 - [x] Primera Historia
-![primera historia]()
-![primera historia mobile]()
+![primera historia](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/baja%20fidelidad%20h1.jpg)
+![primera historia mobile](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/baja%20fidelidad%20h1%20mobile.jpg)
 
 - [ ] Segunda Historia
-![segunda historia]()
-![segunda historia mobile]()
+![segunda historia](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/seguna%20historia%20pbf1.jpeg)
+![segunda historia mobile](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/seguna%20historia%20pbf2.jpg)
 
 #### Prototipo de Alta Fidelidad
 - [x] Desktop
-![desktop]()
+![desktop](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/primera%20historia%20paf1.PNG)
 - [x] Responsive
-![responsive]()
+![responsive](https://github.com/roxanaguerra/LIM012-data-lovers/blob/roxana-branch/src/img/primera%20historia%20paf1%20mobile.PNG)
 ## 2. Objetivos de Aprendizaje
 
 ### UX
