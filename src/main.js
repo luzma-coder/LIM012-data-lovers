@@ -1,37 +1,30 @@
 // import { example } from './data.js';
-
 import data from './data/pokemon/pokemon.js';
-//console.log(example, data);
 
-const typePokemon = (arrayType) => {
-  let styleType = '';
-  for (let i = 0; i < arrayType.length; i += 1) {
-    styleType += `
-        <span class="typeText pok_type_${arrayType[i]}">${arrayType[i]}</span> 
-        `;
+// mostrar los datos en la pantalla
+const dataPokemon = document.getElementById('data_Pokemon');
+
+const typesPokemon = (arrPokemon) => {
+  let styleTypePokemon = '';
+  for (let i = 0; i < arrPokemon.length; i += 1) {
+    styleTypePokemon += `<span class="type_Text pok_type_${arrPokemon[i]}">${arrPokemon[i]}</span>`;
   }
-  return styleType;
+  return styleTypePokemon;
 };
 
-const dataPokemon = document.getElementById('pokemon_Data');
-
 const allPokemon = () => {
-  let info = '';
+  let infoPokemon = '';
   data.pokemon.forEach((obj) => {
-    info += `
-        <div class = "pokemonInfo">
-            <img src="${obj.img}">
-            <p class = "pokemonnum">#${obj.num}</p>
-            <h5>${obj.name[0].toUpperCase()}${obj.name.substring(1)}</h5>
-            <p>${typePokemon(obj.type)}</p>
-        </div>
-        `;
+    infoPokemon += `
+    <div class = "info_Pokemon">
+        <img src="${obj.img}">
+        <p class="num_Pokemon">#${obj.num}</p>
+        <h5>${obj.name[0].toUpperCase()}${obj.name.substring(1)}</h5>
+        <p>${typesPokemon(obj.type)}</p>
+    </div>
+    `;
   });
-  return info;
+  return infoPokemon;
 };
 
 dataPokemon.innerHTML = allPokemon();
-
-// const btnMostrar = document.getElementById('btn_Mostrar');
-// btnMostrar.addEventListener('click', () => {
-// });
