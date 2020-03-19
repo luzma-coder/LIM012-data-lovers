@@ -3,42 +3,26 @@
 // export const example = () => {
 //   return 'example';
 // };
-
-export const allPokemon = (dataPokemons) => {
-    let infoPoke = '';
-    dataPokemons.forEach((obj) => {
-      infoPoke += `
-          <div class = "pokemonInfo">
-              <img src="${obj.img}">
-              <p class = "pokemonnum">#${obj.num}</p>
-              <h5>${obj.name[0].toUpperCase()}${obj.name.substring(1)}</h5>
-              <p>${typePokemon(obj.type)}</p>
-          </div>
-          `;
-    });
-    return infoPoke;
-};
-
-export const orderData = (data, property, condition) => {
+export const sortData = (data, sortBy, sortOrder) => {
     let newDataOrder ;
-    if (condition === 'a-z') {
+    if (sortOrder === 'a-z') {
         newDataOrder = data.sort((a,b) => {
-            if (a[property] > b[property]) {
+            if (a[sortBy] > b[sortBy]) {
+                // console.log('prueba 1: '+ a[sortBy]);
+                // console.log ('prueba b '+ b[sortBy]);
                 return 1;
-              } if (a[property] < b[property]) {
-                return -1;
               }
-              return 0;
-        });
+                return -1;
+        });        
     } else {
         newDataOrder = data.sort((a, b) => {
-            if (a[property] < b[property]) {
+            if (a[sortBy] < b[sortBy]) {
               return 1;
-            } if (a[property] > b[property]) {
-              return -1;
             }
-            return 0;
+              return -1;
           });
+  // console.log(newDataOrder);
     }
   return newDataOrder;
+  
 };

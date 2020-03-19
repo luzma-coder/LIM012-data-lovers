@@ -1,5 +1,8 @@
 // import { example } from './data.js';
 import data from './data/pokemon/pokemon.js';
+import {
+  sortData
+} from './data.js';
 
 // mostrar los datos en la pantalla
 const dataPokemon = document.getElementById('data_Pokemon');
@@ -12,9 +15,9 @@ const typesPokemon = (arrPokemon) => {
   return styleTypePokemon;
 };
 
-const allPokemon = () => {
+const allPokemon = (dataPokemon1) => {
   let infoPokemon = '';
-  data.pokemon.forEach((obj) => {
+  dataPokemon1.forEach((obj) => {
     infoPokemon += `
     <div class = "info_Pokemon">
         <img src="${obj.img}">
@@ -25,6 +28,20 @@ const allPokemon = () => {
     `;
   });
   return infoPokemon;
+  
 };
 
-dataPokemon.innerHTML = allPokemon();
+
+// allPokemon(data.pokemon);
+// ORDENAR LOS POKEMONES 
+const orderAlfabetic = document.querySelector ('#select_order');
+console.log(orderAlfabetic);
+orderAlfabetic.addEventListener('change', () => {
+  // dataPokemon.innerHTML = '';
+  const orderSelect = orderAlfabetic.value;
+console.log(orderSelect);
+dataPokemon.innerHTML = allPokemon(sortData(data.pokemon, 'name' , orderSelect));
+
+});
+
+dataPokemon.innerHTML = allPokemon(data.pokemon);
