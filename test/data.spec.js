@@ -1,4 +1,6 @@
-import { textUpperFirst, filterData, sortData } from '../src/data.js';
+import {
+  sortData, filterData, textUpperFirst, searchName,
+} from '../src/data.js';
 
 const pokemon = [
   {
@@ -179,16 +181,6 @@ const arrFilterValuesx2 = [{ value: 'fire' }, { value: '2 km' }, { value: 'all' 
 const arrFilterValuesx1 = [{ value: 'all' }, { value: 'all' }, { value: 'johto' }];
 const arrFilterValuesx0 = [{ value: 'all' }, { value: 'all' }, { value: 'all' }];
 
-describe('textUpperFirst', () => {
-  it('is a function', () => {
-    expect(typeof textUpperFirst).toBe('function');
-  });
-
-  it('returns `textUpperFirst`', () => {
-    expect(textUpperFirst('pikachu')).toBe('Pikachu');
-  });
-});
-
 describe('filterData', () => {
   it('is a function', () => {
     expect(typeof filterData).toBe('function');
@@ -211,34 +203,34 @@ describe('filterData', () => {
   });
 });
 
+const listName = [{
+  name: 'ivysaur',
+},
+{
+  name: 'bulbasaur',
+},
+{
+  name: 'venusaur',
+},
+{
+  name: 'charmander',
+},
+{
+  name: 'charizard',
+},
+{
+  name: 'squirtle',
+},
+{
+  name: 'wartortle',
+},
+{
+  name: 'blastoise',
+},
+{
+  name: 'misdreavus',
+}];
 describe('sortData', () => {
-  const listName = [{
-    name: 'bulbasaur',
-  },
-  {
-    name: 'ivysaur',
-  },
-  {
-    name: 'venusaur',
-  },
-  {
-    name: 'charmander',
-  },
-  {
-    name: 'charizard',
-  },
-  {
-    name: 'squirtle',
-  },
-  {
-    name: 'wartortle',
-  },
-  {
-    name: 'blastoise',
-  },
-  {
-    name: 'misdreavus',
-  }];
   const nameAZ = [{
     name: 'blastoise',
   },
@@ -294,6 +286,51 @@ describe('sortData', () => {
     {
       name: 'blastoise',
     }];
+  const listNum = [{
+    num: '003',
+  },
+  {
+    num: '001',
+  },
+  {
+    num: '002',
+  },
+  {
+    num: '004',
+  },
+  {
+    num: '005',
+  }];
+  const numUp = [{
+    num: '001',
+  },
+  {
+    num: '002',
+  },
+  {
+    num: '003',
+  },
+  {
+    num: '004',
+  },
+  {
+    num: '005',
+  }];
+  const numDown = [{
+    num: '005',
+  },
+  {
+    num: '004',
+  },
+  {
+    num: '003',
+  },
+  {
+    num: '002',
+  },
+  {
+    num: '001',
+  }];
   it('is a function', () => {
     expect(typeof sortData).toBe('function');
   });
@@ -303,5 +340,51 @@ describe('sortData', () => {
   });
   it('returns `sortData Descendente`', () => {
     expect(sortData(listName, 'z-a')).toEqual(nameZA);
+  });
+  it('returns `sortData NumUp`', () => {
+    expect(sortData(listNum, 'numUp')).toEqual(numUp);
+  });
+  it('returns `sortData NumDown`', () => {
+    expect(sortData(listNum, 'numDown')).toEqual(numDown);
+  });
+});
+
+describe('textUpperFirst', () => {
+  it('is a function', () => {
+    expect(typeof textUpperFirst).toBe('function');
+  });
+
+  it('returns `Roxana` para `roxana`', () => {
+    expect(textUpperFirst('roxana')).toEqual('Roxana');
+  });
+  it('returns `PIKACHU` para `PIKACHU`', () => {
+    expect(textUpperFirst('PIKACHU')).toEqual('PIKACHU');
+  });
+  it('returns `Gloom` para `Gloom`', () => {
+    expect(textUpperFirst('Gloom')).toEqual('Gloom');
+  });
+  it('returns (vacio)`-` para (vacio)`-`', () => {
+    expect(textUpperFirst('')).toEqual('');
+  });
+});
+
+const nameFilter = [
+  {
+    name: 'venusaur',
+  },
+  {
+    name: 'misdreavus',
+  },
+  {
+    name: 'ivysaur',
+  },
+];
+describe('searchName', () => {
+  it('is a function', () => {
+    expect(typeof searchName).toBe('function');
+  });
+
+  it('returns un array de objetos que contenga la letra `v`', () => {
+    expect(searchName(listName, 'name', 'v')).toEqual(nameFilter);
   });
 });

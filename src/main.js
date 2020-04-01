@@ -3,30 +3,24 @@ import {
   textUpperFirst,
   filterData,
   sortData,
+  searchName,
 } from './data.js';
 import data from './data/pokemon/pokemon.js';
 
+// const conteiner1 = document.getElementById('conteiner1');
+// const allInfoPokemon = document.getElementById('conteiner2');
 const dataPokemon = document.getElementById('data_Pokemon');
 const selectFilter = document.querySelectorAll('.select_filter');
+const searchForName = document.getElementById('search_name');
 const sectionDetail = document.getElementById('section_detail');
 const selectors = document.getElementById('selectors');
 const btnback = document.getElementById('btn_back');
-
-// mostrar los tipos de egg que tiene un pokemon
-// const fillSelectEgg = () => {
-//   let infoSelectEgg = '<option value=\'\'>Egg x Km</option>';
-//   data.pokemon.forEach((element) => {
-//     infoSelectEgg += `<option value="${element.egg}">${element.egg}</option>`;
-//     //console.log(infoSelectEgg);
-//   });
-//   //7console.log(infoSelectEgg);
-// }
 
 // cargar datos del arreglo types
 const typesPokemon = (arrTypePokemon) => {
   let styleTypePokemon = '';
   for (let i = 0; i < arrTypePokemon.length; i += 1) {
-    styleTypePokemon += `<span class="type_Text pok_type_${arrTypePokemon[i]}">${arrTypePokemon[i]}</span>`;
+    styleTypePokemon += `<span class="type_Text pok_type_${arrTypePokemon[i]}">${textUpperFirst(arrTypePokemon[i])}</span>`;
   }
   return styleTypePokemon;
 };
@@ -163,14 +157,13 @@ const ShowDetailPokemon = (objPokemon) => {
   `;
   sectionDetail.innerHTML = DetailPokemon;
 };
+
 // mostrar los datos en la pantalla
 const allPokemon = (arrPokemon) => {
   dataPokemon.innerHTML = '';
-  let infoPokemon = '';
   arrPokemon.forEach((obj) => {
     const divNewInfoPokemon = document.createElement('div');
     divNewInfoPokemon.setAttribute('class', 'info_Pokemon');
-
     divNewInfoPokemon.innerHTML += `
         <img id="${obj.num}" class="imgShowPokemon" src="${obj.img}"></a>
         <p class="num_Pokemon">#${obj.num}</p>
@@ -221,10 +214,21 @@ orderAlfabetic.addEventListener('change', () => {
   allPokemon(sortData(data.pokemon, orderSelect));
 });
 
-// funcion para ver detalle del pokemon
-selectFilter[2].addEventListener('change', () => {
-  const valueSelect = selectFilter;
-  allPokemon(filterData(data.pokemon, valueSelect));
+// BUSCAR UN POKEMON POR SU NOMBRE
+searchForName.addEventListener('keyup', () => {
+  const inputText = searchForName.value.toLowerCase();
+  allPokemon(searchName(data.pokemon, 'name', inputText));
+  if (dataPokemon.innerHTML === '') {
+    dataPokemon.innerHTML = `
+    <div class = "nameNotExit">
+        <p class="message">SORRY, NOT RESULTS FOUND</p>    
+        <img src="img/no search.gif" id="img_NoSearch">       
+        <p class="message"> * Sorry we couldn't find any matches.</p>
+        <p class="message">* Make sure the spelling is correct.</p>
+        <p class="message">* Use less keywords.</p>
+    </div>
+    `;
+  }
 });
 
 allPokemon(data.pokemon);
