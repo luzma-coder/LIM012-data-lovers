@@ -186,7 +186,7 @@ describe('filterData', () => {
     expect(typeof filterData).toBe('function');
   });
 
-  it('returns `filterData`', () => {
+  it('Filtro x 3 valores', () => {
     expect(filterData(pokemon, arrFilterValuesx3)).toEqual(arrResultWaterNoeggKanto);
   });
 
