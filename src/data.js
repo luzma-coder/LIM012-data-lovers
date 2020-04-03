@@ -65,4 +65,3 @@ export const calcMoves = (arrmoves, arrType) => {
   });
   return arrResult;
 };
-

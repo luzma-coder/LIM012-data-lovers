@@ -1,28 +1,20 @@
-/* ********************** */
-h5 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    display: inline-block;
-}
-/* **************** */
+/* ***** ESTILOS BODY */
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#E8F5E9;
 }
 
-a{
-    color: white;
-}
-
-.header{
+/* ***** ESTILOS HEADER ***** */
+.header {
     background: linear-gradient(to right, #639d25, #427768);
-    /* box-shadow:1px 1px 2px 0 rgba(0,0,0,.1); */
     position: fixed;
     width:100%;
     z-index:3;
-    /* height: 5rem; */
+}
+
+a {
+    color: #fff;
 }
 
 .header ul{
@@ -35,23 +27,18 @@ a{
 .header ul a{
     display:block;
     padding:10px;
-    /* border-right:px solid #333333; */
     text-decoration:none;
+    font-size: 20px;
 }
 
 .header ul a:hover{
-   /* background-color:#ddd;  */
-    /* color: #333; */
-    background: linear-gradient(to right,#9ce4d0, #86a764 ) ;
-    border: inset thin;
-    font-size: 20px;
+    font-size: 23px;
+    box-shadow: 0px 5px 7px #427768;
 }
 
 .header .logo{
     float:left;
     display:block;
-    /* font-size:2em; */
-    /* padding:10px 20px; */
     padding: 0.3em 0.5em;
 }
 
@@ -120,7 +107,8 @@ a{
 }
 
 #img-logo:hover {
-    background: linear-gradient(to right, #86a764, #9ce4d0) ; 
+    -webkit-transform:scale(1.3);
+    transform:scale(1.1);
 } 
 .div_search {
     text-align: center;
@@ -143,15 +131,40 @@ a{
     width: 35px;
 }
 
-/*********** Estilos main ************/
+/* IMAGENES DEL HEADER */
+#img-logo {
+    width: 260px;
+    height: 65px;
+}
+#img-home {
+    width: 40px;
+    height: 40px;
+}
+#img-pokedex {
+    width: 45px;
+    height: 45px;
+}
+#img-about {
+    width: 40px;
+    height: 40px;
+}
+/* ***** FIN HEADER ***** */
+
+/* ***** ESTILOS MAIN ***** */
 main {
     display: flex;
     flex-direction: column;
-    /* padding: 15px 6%; */
     text-align: center;
     padding-top: 30%;
 }
-/*********** Estilos para buscar,filtrar y ordenar ************/
+
+h5 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: inline-block;
+}
+/* ***** ESTILOS PARA SELECT: ORDENAR Y FILTRAR ***** */
 .square{
     box-shadow: 0px 3px 5px #427768;
     font-family: sans-serif;
@@ -171,27 +184,10 @@ main {
     cursor: pointer;
 }
 
-#img-logo {
-    width: 260px;
-    height: 65px;
-}
-#img-home {
-    width: 40px;
-    height: 40px;
-}
-#img-pokedex {
-    width: 45px;
-    height: 45px;
-}
-#img-about {
-    width: 40px;
-    height: 40px;
-}
-
 /* ********** ESTILOS: MOSTRAR DATOS DEL POKEMON *********** */
 #data_Pokemon {
     width: 100%;
-    /* height: 100vh; */
+    /* height: 100vh; */    
 }
 .info_Pokemon {
     background: #FAFAFA;
@@ -215,7 +211,6 @@ main {
     -webkit-transform:scale(1.3);
     transform:scale(1.1);
 }
-
 .info_Pokemon h5{
     font-size: 1.3em;
 }
@@ -242,8 +237,6 @@ main {
 }
 #img_NoSearch {
     border-radius: 50%;
-    /* height: 25%;
-    width: 20%; */
     box-shadow: 0px 5px 7px #427768;
 }
 .message {
@@ -251,23 +244,22 @@ main {
     color: #1b5e20;
 }
 
-/********************** Estilos section ***********************/
+/* ***** ESTILOS SECTION ***** */
 .hide {
     display:none;
 }
-#btn_back {
-    box-shadow: 3px 3px 5px #427768;
-    font-size: 17px;
-    color: white;
-    margin: .5em 0.4em;
-    padding: 0.5em;
-    background: linear-gradient(to right, #639d25, #427768);
-    margin-left: auto;
-    display: flex;
-    cursor: pointer;
+.section_info {
+    background: white;
+    box-shadow: 0px 5px 7px #427768;
+}
+table tr:nth-child(even) {
+    background-color: rgb(184, 197, 194);
 }
 
-/*********** Estilos para Detalle Pokemon ************/
+table tr:nth-child(odd) {
+    background-color: rgb(202, 233, 215);
+}
+
 #section_detail{
     box-sizing: border-box;
     color: #1b5e20;
@@ -293,6 +285,18 @@ main {
     grid-auto-rows: max-content;
     grid-auto-columns: minmax(20%);
 }
+
+.section-evolution {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.show-evolution {
+    display: flex;
+    flex-direction: column;
+}
+
 .move{
     margin-top: 20px;
 }
@@ -303,32 +307,32 @@ main {
 .move h4{
     margin: 3% 3% 2%;
 }
-.evolpok p{ 
-    margin:0;
-    padding: 1%;
+
+.icon-data {
+    height: 35px;
+    width: 35px;
 }
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
-table tr:nth-child(even) {
-    /* background-color: rgb(184, 197, 194); */
-    background-color: rgb(214, 226, 223);
-}
-
-table tr:nth-child(odd) {
-    background-color: rgb(202, 233, 215);
-}
-
-.section_info {
-    background: white;
-    box-shadow: 0px 5px 7px #427768;
-}
 
 [class*="col-"] {
     float: left;
     padding: 0 1.2em;
+}
+
+#btn_back {
+    box-shadow: 3px 3px 5px #427768;
+    font-size: 17px;
+    color: white;
+    margin: .5em 0.4em;
+    padding: 0.5em;
+    background: linear-gradient(to right, #639d25, #427768);
+    margin-left: auto;
+    display: flex;
+    cursor: pointer;
 }
 
 .col-1 {width: 8.33%;}
@@ -344,8 +348,8 @@ table tr:nth-child(odd) {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/*********** Estilos de Footer ************/
-footer {  
+/* ***** ESTILOS FOOTER ***** */
+footer {
     background-color: #378B7D;
     background: linear-gradient(to right, #639d25, #427768);
     color: #fff;
@@ -358,9 +362,11 @@ footer {
     position: absolute;
     height: 190px;
 }
+
 .footer_Links {
     justify-content: space-between;    
 }
+
 .img_facebook {
     width: 25px;
     height: 25px;
@@ -381,8 +387,42 @@ footer {
     width: 50px;
     height: 60px;
 }
+
+/* MEDIA PARA RESPONSIVE MOBIL */
+@media screen and (max-width:48em) {
+    .info_Pokemon{
+        min-width: 100px;
+        margin: 1% 1px;
+        /* background: red; */
+    }
+    .info_Pokemon img{
+        height: 80%;
+        width: 80%;
+    }
+    .type_Text {
+        font-size: 13px;
+        padding: 4% 5%;
+    }
+    .info_Pokemon p{
+        margin-top: 5px;
+    }
+    .info_Pokemon h5{
+        font-size: 15px;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 1em;
+        width: 100%;
+    }
+    .move .type_Text{
+        margin: 0 4%;
+    }
+
+}
+
 /* ***** MEDIA PARA DESKTOP ***** */
-@media (min-width:48em){
+@media (min-width:48em){    
     main {
         padding-top: 7%;
     }
@@ -436,50 +476,7 @@ footer {
     }
 }
 
-/* MEDIA PARA RESPONSIVE MOBIL */
-@media screen and (max-width:48em) {
-    .info_Pokemon{
-        min-width: 100px;
-        margin: 1% 1px;
-    }
-    .info_Pokemon img{
-        height: 80%;
-        width: 80%;
-    }
-    .type_Text {
-        font-size: 13px;
-        padding: 4% 5%;
-    }
-    .info_Pokemon p{
-        margin-top: 5px;
-    }
-    .info_Pokemon h5{
-        font-size: 15px;
-    }
-
-    [class*="col-"] {
-        float: left;
-        padding: 1em;
-        width: 100%;
-    }
-    .col-2 {width: 16.66%;}
-    .imgMin {
-        /* border:#84a586 solid 3px; */
-        margin: 5px;
-        min-width: 80px;
-        height: auto;
-    }
-    .evolpok p{ 
-        font-size: 0.8em;
-        margin:05px;
-        padding: 3px;
-    }
-    .move .type_Text{
-        margin: 0 4%;
-    }
-}
-
-/*********** Estilos de colores para tipo de pokemon ************/
+/* ***** ESTILOS PARA LOS TIPOS ***** */
 .pok_type_normal{background-color:#a8a878}
 .pok_type_fire{background-color:#f08030}
 .pok_type_water{background-color:#6890f0}
@@ -499,3 +496,4 @@ footer {
 .pok_type_flying{background-color:#a890f0}
 .pok_type_fighting{background-color:#c02038}
 .pok_type_fight{background-color:#c02038}
+

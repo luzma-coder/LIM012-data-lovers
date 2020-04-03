@@ -39,7 +39,7 @@ const ShowDataEvolution = (DataEvolution) => {
     Iscandy = '';
   }
   DetailEvolution += `
-  <div class="col-2 evolpok">
+  <div class="show-evolution">
     <div class>
       <p>${DataEvolution.num} ${Isname}</p>
       <img class="imgMin" data-id="${DataEvolution.num}" src="${rootImg}${DataEvolution.num}${extImg}">
@@ -180,7 +180,7 @@ const ShowDetailPokemon = (objPokemon) => {
     </section>
     <section class="row">
       <header><h3>Evolution</h3></header>
-      ${ShowEvolution(objPokemon.evolution, objPokemon.num)}
+      <div class="section-evolution">${ShowEvolution(objPokemon.evolution, objPokemon.num)}</div>
     </section>
     <section class="row">
       <header><h3>All Moves</h3></header>
@@ -207,6 +207,7 @@ const ShowDetailPokemon = (objPokemon) => {
         </tbody>
       </table>
     </section>
+  <button id="btn_back" onclick="location.reload()">BACK</button>    
   `;
   sectionDetail.innerHTML = DetailPokemon;
 };
@@ -224,7 +225,6 @@ const allPokemon = (arrPokemon) => {
         <p>${typesPokemon(obj.type)}</p>
     `;
     // evento click para mostrar detalle pokemon
-    // console.log(divNewInfoPokemon.querySelector('.imgShowPokemon'));
     divNewInfoPokemon.querySelector('.imgShowPokemon').addEventListener('click', (event) => {
       event.preventDefault();
       selectors.classList.add('hide');
