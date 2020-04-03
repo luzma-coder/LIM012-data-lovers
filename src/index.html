@@ -2,72 +2,100 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers - Pokemon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/pokedex.png" type="img/png">
+    <title>PokeAmigos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <header>
-        <a href="index.html"><img src="img/logo_datalovers.png" class="img_logo"></a>
-        <nav>
-          <ul class="menu">
-            <li><a href="">POKEDEX</a></li>
-          </ul>
-        </nav>      
-    </header>      
-    <main>
-      <div class="contenedor1" id="contenedor1">
-        <input type="text" placeholder="Search for Name" class="square search_name">
+    <header class="header">
+      <a href="index.html" class="logo"><img id="img-logo" src="img/logo_datalovers_2.png" ></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <label class="menu-icon" for="menu-btn" ><span class="nav-icon"></span></label>
+      <ul class="menu">
+        <li><a class="menu-item" href=""><img id="img-home" src="img/home3.png">HOME</a></li>
+        <li><a class="menu-item" href=""><img id="img-pokedex" src="img/pokedex7.png">POKEDEX</a></li>
+        <li><a class="menu-item" href=""><img id="img-about" src="img/about3.png">ABOUT</a></li>
+      </ul> 
+      <div class="div_search">
+        <input type="text" id="search_name" placeholder="Search for Name" class="search_name">
+      </div>
+      <div class="div_lupa">
+        <img src="img/icono-search2.PNG" id="lupa">  
+      </div>        
+    </header>
+    
+    <main>     
+      <div id="selectors"> 
+        <h5>INFO DE TODO LOS POKEMONES</h5><br>    
+        <select name="select" id="select_order" class="square select_order">
+          <option value="" selected disabled>Order</option>
+          <option value="a-z">A-Z</option>
+          <option value="z-a">Z-A</option>
+          <option value="numUp">Number ↑</option>
+          <option value="numDown">Number ↓</option>
+        </select>
         <select name="select" id="select_type" class="square select_filter">
           <option value="">Type</option>
+          <option value="all">All</option>
           <option value="normal">Normal</option>
           <option value="electric">Electric</option>
           <option value="fighting">Fighting</option>
           <option value="flying">Flying</option>
-          <option value="">Poison</option>
-          <option value="">Ground</option>
-          <option value="">Rock</option>
-          <option value="">Bug</option>
-          <option value="">Ghost</option>
-          <option value="">Steel</option>
-          <option value="">Fire</option> 
-          <option value="">Water</option> 
-          <option value="">Grass</option> 
-          <option value="">Psychic</option> 
-          <option value="">Ice</option> 
-          <option value="">Dragon</option> 
-          <option value="">Dark</option>
-          <option value="">Fairy</option>  
+          <option value="poison">Poison</option>
+          <option value="ground">Ground</option>
+          <option value="rock">Rock</option>
+          <option value="bug">Bug</option>
+          <option value="ghost">Ghost</option>
+          <option value="steel">Steel</option>
+          <option value="fire">Fire</option> 
+          <option value="water">Water</option> 
+          <option value="grass">Grass</option> 
+          <option value="psychic">Psychic</option> 
+          <option value="ice">Ice</option> 
+          <option value="dragon">Dragon</option> 
+          <option value="dark">Dark</option>
+          <option value="fairy">Fairy</option> 
         </select>
         <select name="select" id="select_egg" class="square select_filter">
           <option value="">Egg x Km</option>
-          <option value="">2 Km</option>
-          <option value="">5 Km</option>
-          <option value="">7 Km</option>
-          <option value="">10 Km</option>        
+          <option value="all">All</option>
+          <option value="not in eggs">none</option>
+          <option value="2 km">2 Km</option>
+          <option value="5 km">5 Km</option>
+          <option value="7 km">7 Km</option>
+          <option value="10 km">10 Km</option>
         </select>
         <select name="select" id="select_region" class="square select_filter">
           <option value="">Region</option>
-          <option value="">Kanto</option>
-          <option value="">Johto</option>       
+          <option value="all">All</option>
+          <option value="kanto">Kanto</option>
+          <option value="johto">Johto</option>
         </select>
-        <select name="select" id="select_order" class="square select_filter">
-          <option value="" selected disabled>Ordenar</option>
-          <option value="a-z">A-Z</option>
-          <option value="z-a">Z-A</option>
-        </select>
-      </div>
-      <div id="data_Pokemon">
-      </div>
+        <div id="data_Pokemon">
+        </div>
+      </div>      
+      <section id="section_detail">
+      </section>
     </main>
     <footer class= "footer">
       <div class="container_Footer">
         <div class="footer_Links">
-          <img src="img/facebook.png" alt="" class="img_facebook">
-          <img src="img/twitter.png" alt="" class="img_twitter">
-          <img src="img/tpc.png" alt="" class="img_tcp">
-          <img src="img/nintendo.png" alt="" class="img_nintendo">
-          <img src="img/niantic.png" alt="" class="img_niantic">
+          <a href="https://www.facebook.com/PokemonGO/">            
+            <img src="img/facebook.png" alt="" class="img_facebook">
+          </a>
+          <a href="https://twitter.com/PokemonGoApp">
+            <img src="img/twitter.png" alt="" class="img_twitter">
+          </a>
+          <a href="http://www.pokemon.com/es/">
+            <img src="img/tpc.png" alt="" class="img_tcp">
+          </a>
+          <a href="http://www.nintendo.com">
+            <img src="img/nintendo.png" alt="" class="img_nintendo">
+          </a>
+          <a href="http://www.nianticlabs.com">
+            <img src="img/niantic.png" alt="" class="img_niantic">
+          </a>          
         </div>
         <div class="footer_copyright">         
             Niantic, Inc. ©2020 Pokémon. ©1995-2020 Nintendo
