@@ -1,5 +1,5 @@
 import {
-  sortData, filterData, textUpperFirst, searchName,
+  sortData, filterData, textUpperFirst, searchName, calcMoves,
 } from '../src/data.js';
 
 const pokemon = [
@@ -386,5 +386,45 @@ describe('searchName', () => {
 
   it('returns un array de objetos que contenga la letra `v`', () => {
     expect(searchName(listName, 'name', 'v')).toEqual(nameFilter);
+  });
+});
+const quickMove = [
+  {
+    name: 'razor leaf',
+    type: 'grass',
+    'base-damage': 13,
+    energy: 7,
+    'move-duration-seg': 1,
+    dps: 13,
+  },
+  {
+    name: 'acid',
+    type: 'poison',
+    'base-damage': 9,
+    energy: 8,
+    'move-duration-seg': 0.8,
+    dps: 11.25,
+  }];
+const infoType = [{
+  type: 'grass',
+},
+{
+  type: 'poison',
+}];
+
+const calcEpsDps = [{
+  eps: 7,
+  dps: 13,
+},
+{
+  eps: 10,
+  dps: 11.25,
+}];
+describe('calcMoves', () => {
+  it('is a function', () => {
+    expect(typeof calcMoves).toBe('function');
+  });
+  it('returns un array con datos: eps y dps', () => {
+    expect(calcMoves(quickMove, infoType)).toEqual(calcEpsDps);
   });
 });
