@@ -25,9 +25,17 @@ export const filterData = (data, condition) => {
 export const sortData = (data, sortOrder) => {
   let newDataOrder;
   switch (sortOrder) {
+<<<<<<< HEAD
     case 'a-z': newDataOrder = data.sort((a, b) => (a.name > b.name ? 1 : -1));
       break;
     case 'z-a': newDataOrder = data.sort((a, b) => (a.name < b.name ? 1 : -1));
+=======
+    case 'a-z':
+      newDataOrder = data.sort((a, b) => (a.name > b.name ? 1 : -1));
+      break;
+    case 'z-a':
+      newDataOrder = data.sort((a, b) => (a.name < b.name ? 1 : -1));
+>>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
       break;
     case 'numUp': newDataOrder = data.sort((a, b) => (a.num > b.num ? 1 : -1));
       break;
@@ -57,7 +65,13 @@ export const calcMoves = (arrmoves, arrType) => {
     } else {
       stab = element['base-damage'] * 1;
     }
+<<<<<<< HEAD
     eps = (element.energy / element['move-duration-seg']) * eps;
+=======
+    // eslint-disable-next-line operator-assignment
+    eps = (element.energy / element['move-duration-seg']) * eps;
+    // eslint-disable-next-line operator-assignment
+>>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
     dps = (stab / element['move-duration-seg']) * dps;
     newElement.eps = eps;
     newElement.dps = dps;
