@@ -4,8 +4,8 @@
 
 * [1. Definición del proyecto](#1-definicion-del-proyecto)
 * [2. Objetivos del Proyecto](#2-objetivos-del-proyecto)
-* [3. Usuario](#2-usuario)
-* [4. Testeos de usabilidad](#2-testeos-de-usabilidad)
+* [3. Usuario](#3-usuario)
+* [4. Testeos de usabilidad](#4-testeos-de-usabilidad)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
 * [6. Checklist](#6-checklist)
 
@@ -29,19 +29,52 @@ Utilizarian el producto antes de salir a capturar pokemons, como una estrategia 
 
 ### Historias de usuario
 
+#### Historia 1: Mostrar todos los pokemons
+YO como jugador de Pokemon Go
+QUIERO ver la imagen, el numero, nombre y elementos de todos los pokemones
+PARA poder acceder a toda la información de un determinado pokemon.
+
+#### Historia 2: Mostrar detalle Pokemon
+YO como jugador de Pokemon Go
+QUIERO acceder a un determinado pokemon haciendo click sobre la imagen
+PARA poder ver la información detallada del pokemon (tipos, evoluciones, datos para captura, descripción, vulnerabilidades, movimientos, etc )
+
+#### Historia 3: Filtrar x type
+YO como jugador Pokemon Go
+QUIERO filtrar los pokemones por "tipo"
+PARA poder ver la lista de un determinado tipo de pokemones
+
+#### Historia 4: Buscar por nombre
+YO como jugador Pokemon Go
+QUIERO buscar por nombre de pokemon
+PARA poder hacer click y acceder a la información general del pokemon.
+
+#### Historia 5: Filtrar por generacion
+YO como jugador Pokemon Go
+QUIERO filtrar los pokemones por "generacion"
+PARA poder ver la lista de un determinado generacion de pokemones
+
+#### Historia 6: Filtrar por huevo
+YO como jugador Pokemon Go
+QUIERO filtrar los pokemones por "huevo"
+PARA poder ver la lista de un determinado tipo de huevo de pokemones
+
+#### Historia 8: Ordenar pokemons mostrados
+YO como jugador de Pokemon Go
+QUIERO tener la opción de ordenar por nombres
+PARA verlos de forma ascendente y descendente
+
 [Tablero en Trello](https://trello.com/b/TV3RTz0K/data-lovers) 
 
 ### Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad
+#### Prototipo de baja fidelidad: Primera Historia
 
-Primera Historia
-![desktop](/src/screen/p1.jpg)
-![responsive](/src/screen/r1.jpg)
+![desktop](/src/screen/p1.jpg) ![responsive](/src/screen/r1.jpg)
 
-Segunda Historia
-![desktop](/src/screen/p2.jpeg)
-![responsive](/src/screen/r2.jpg)
+#### Prototipo de baja fidelidad: Segunda Historia
+
+![desktop](/src/screen/p2.jpeg) ![responsive](/src/screen/r2.jpg)
 
 #### Prototipo de alta fidelidad
 
@@ -51,7 +84,21 @@ Primera Historia
 
 Segunda Historia
 ![desktop](/src/screen/FIGMA-DESKTOP-DATOS.PNG)
-![responsive](/src/screen/FIGMA-DESKTOP-H1.PNG)
+![responsive](/src/screen/FIGMA-MOBIL-DATOS.PNG)
+
+#### Final
+
+##### Primera Historia
+![desktop](/src/screen/DESKTOP-FINAL.PNG)
+![responsive](/src/screen/MOBIL-FINAL.PNG)
+
+##### Segunda Historia
+![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG)
+
+![responsive](/src/screen/MOBILE-DETALLE1-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE2-FINAL.PNG)
+![responsive](/src/screen/MOBILE-DETALLE3-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE4-FINAL.PNG)
+![responsive](/src/screen/MOBILE-DETALLE5-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE6-FINAL.PNG)
 
 ## 4. Testeos de usabilidad
 
@@ -112,7 +159,7 @@ Pregunta: ¿Cómo lo harías para buscar más rapido la información sobre un po
 
 ### DOM
 
-- [x] Entender y reconocer los selectores del DOM (`querySelector` | `querySelectorAll`).
+- [x] Entender y reconocer los selectores del DOM (`querySelector` | `querySelectorAll`)
 - [x] Manejar eventos del DOM. (`addEventListener`)
 - [x] Manipular dinámicamente el DOM. (`createElement`, `appendchild`, `innerHTML`, `value`)
 
