@@ -24,7 +24,7 @@ Tener la informacion de 251 pokemones con sus respectivas Evoluciones de cada po
 
 ## 3. Usuario
 Todas las personas que juegue Pokémon GO que desee información adicional sobre algun pokemon.
-Nuestr@s principales usuari@s son personas que tienen poco tiempo coleccionando o evolucionando pokemons. Y desean apliar la cantidad de pokemons en su pokedex.
+Nuestr@s principales usuari@s son personas que tienen poco tiempo coleccionando o evolucionando pokemons. Y desean ampliar la cantidad de pokemons en su pokedex.
 
 ### Necesidad del Usuario
 
@@ -97,8 +97,8 @@ Segunda Historia
 ![responsive](/src/screen/MOBILE-FINAL.PNG)
 
 ##### Segunda Historia
-![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) [desktop](/src/screen/DESKTOP-DETALLE2-FINAL.PNG)
-![desktop](/src/screen/DESKTOP-DETALLE3-FINAL.PNG) [desktop](/src/screen/DESKTOP-DETALLE4-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE2-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE3-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE4-FINAL.PNG)
 
 ![responsive](/src/screen/MOBILE-DETALLE1-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE2-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE3-FINAL.PNG) 
 ![responsive](/src/screen/MOBILE-DETALLE4-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE5-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE6-FINAL.PNG)
