@@ -5,9 +5,13 @@
 * [1. Definición del proyecto](#1-definicion-del-proyecto)
 * [2. Objetivos del Proyecto](#2-objetivos-del-proyecto)
 * [3. Usuario](#3-usuario)
+* [3.1. Historias de usuario](#3.1-Historias-de-usuario)
+* [3.2. Diseño de la Interfaz de Usuario](#3.2-Diseño-de-la-Interfaz-de-Usuario)
+* [3.2.1. Prototipo de baja fidelidad](#3.2.1-Prototipo-de-baja-fidelidad)
+* [3.2.2. Prototipo de alta fidelidad](#3.2.2-Prototipo-de-alta-fidelidad)
+* [3.2.3. Prototipo de alta fidelidad](#3.2.3-Proyecto-Final)
 * [4. Testeos de usabilidad](#4-testeos-de-usabilidad)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
-* [6. Checklist](#6-checklist)
 
 ***
 ## 1. Definición del proyecto
@@ -27,7 +31,7 @@ Nuestr@s principales usuari@s son personas que tienen poco tiempo coleccionando 
 Los usuari@s deseean ver la informacion sobra captura y evolución de los pokemons.
 Utilizarian el producto antes de salir a capturar pokemons, como una estrategia para decidir que pokemon buscar o capturar.
 
-### Historias de usuario
+### 3.1 Historias de usuario
 
 #### Historia 1: Mostrar todos los pokemons
 YO como jugador de Pokemon Go
@@ -66,17 +70,17 @@ PARA verlos de forma ascendente y descendente
 
 [Tablero en Trello](https://trello.com/b/TV3RTz0K/data-lovers) 
 
-### Diseño de la Interfaz de Usuario
+### 3.2 Diseño de la Interfaz de Usuario
 
-#### Prototipo de baja fidelidad: Primera Historia
+#### 3.2.1 Prototipo de baja fidelidad: 
 
+#### Primera Historia
 ![desktop](/src/screen/p1.jpg) ![responsive](/src/screen/r1.jpg)
 
-#### Prototipo de baja fidelidad: Segunda Historia
-
+##### Segunda Historia
 ![desktop](/src/screen/p2.jpeg) ![responsive](/src/screen/r2.jpg)
 
-#### Prototipo de alta fidelidad
+#### 3.2.2 Prototipo de alta fidelidad
 
 Primera Historia
 ![desktop](/src/screen/FIGMA-DESKTOP-H1.PNG)
@@ -86,19 +90,18 @@ Segunda Historia
 ![desktop](/src/screen/FIGMA-DESKTOP-DATOS.PNG)
 ![responsive](/src/screen/FIGMA-MOBIL-DATOS.PNG)
 
-#### Final
+#### 3.2.3 Proyecto Final
 
 ##### Primera Historia
 ![desktop](/src/screen/DESKTOP-FINAL.PNG)
-![responsive](/src/screen/MOBIL-FINAL.PNG)
+![responsive](/src/screen/MOBILE-FINAL.PNG)
 
 ##### Segunda Historia
-![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG)
-![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE2-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE3-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE4-FINAL.PNG)
 
-![responsive](/src/screen/MOBILE-DETALLE1-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE2-FINAL.PNG)
-![responsive](/src/screen/MOBILE-DETALLE3-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE4-FINAL.PNG)
-![responsive](/src/screen/MOBILE-DETALLE5-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE6-FINAL.PNG)
+![responsive](/src/screen/MOBILE-DETALLE1-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE2-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE3-FINAL.PNG) 
+![responsive](/src/screen/MOBILE-DETALLE4-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE5-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE6-FINAL.PNG)
 
 ## 4. Testeos de usabilidad
 
@@ -186,26 +189,4 @@ Pregunta: ¿Cómo lo harías para buscar más rapido la información sobre un po
 - [x] Organizar y dividir el código en módulos (Modularización).
 - [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [x] Utilizar linter para seguir buenas prácticas (ESLINT).
-
-## 6. Checklist
-
-* [ ] Usa VanillaJS.
-* [x] No hace uso de `this`.
-* [x] Pasa linter (`npm run pretest`)
-* [x] Pasa tests (`npm test`)
-* [x] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [x] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [x] Incluye historias de usuario en `README.md`.
-* [x] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [x] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [x] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [x] UI: Permite filtrar data en base a una condición.
-* [x] UI: Es _responsive_.
 
