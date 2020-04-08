@@ -5,11 +5,11 @@
 * [1. Definición del proyecto](#1-definicion-del-proyecto)
 * [2. Objetivos del Proyecto](#2-objetivos-del-proyecto)
 * [3. Usuario](#3-usuario)
-* [3.1. Historias de usuario](#3.1-Historias-de-usuario)
-* [3.2. Diseño de la Interfaz de Usuario](#3.2-Diseño-de-la-Interfaz-de-Usuario)
-* [3.2.1. Prototipo de baja fidelidad](#3.2.1-Prototipo-de-baja-fidelidad)
-* [3.2.2. Prototipo de alta fidelidad](#3.2.2-Prototipo-de-alta-fidelidad)
-* [3.2.3. Proyecto Final](#3.2.3-Proyecto-Final)
+* [3.1. Historias de usuario](#31-Historias-de-usuario)
+* [3.2. Diseño de la Interfaz de Usuario](#32-Diseño-de-la-Interfaz-de-Usuario)
+* [3.2.1. Prototipo de baja fidelidad](#321-Prototipo-de-baja-fidelidad)
+* [3.2.2. Prototipo de alta fidelidad](#322-Prototipo-de-alta-fidelidad)
+* [3.2.3. Proyecto Final](#323-Proyecto-Final)
 * [4. Testeos de usabilidad](#4-testeos-de-usabilidad)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
 
@@ -39,34 +39,34 @@ QUIERO ver la imagen, el numero, nombre y elementos de todos los pokemones
 PARA poder acceder a toda la información de un determinado pokemon.
 
 #### Historia 2: Mostrar detalle Pokemon
-YO como jugador de Pokemon Go
-QUIERO acceder a un determinado pokemon haciendo click sobre la imagen
-PARA poder ver la información detallada del pokemon (tipos, evoluciones, datos para captura, descripción, vulnerabilidades, movimientos, etc )
+. YO como jugador de Pokemon Go
+. QUIERO acceder a un determinado pokemon haciendo click sobre la imagen
+. PARA poder ver la información detallada del pokemon (tipos, evoluciones, datos para captura, descripción, vulnerabilidades, movimientos, etc )
 
 #### Historia 3: Filtrar x type
-YO como jugador Pokemon Go
-QUIERO filtrar los pokemones por "tipo"
-PARA poder ver la lista de un determinado tipo de pokemones
+. YO como jugador Pokemon Go
+. QUIERO filtrar los pokemones por "tipo"
+. PARA poder ver la lista de un determinado tipo de pokemones
 
 #### Historia 4: Buscar por nombre
-YO como jugador Pokemon Go
-QUIERO buscar por nombre de pokemon
-PARA poder hacer click y acceder a la información general del pokemon.
+. YO como jugador Pokemon Go
+. QUIERO buscar por nombre de pokemon
+. PARA poder hacer click y acceder a la información general del pokemon.
 
 #### Historia 5: Filtrar por generacion
-YO como jugador Pokemon Go
-QUIERO filtrar los pokemones por "generacion"
-PARA poder ver la lista de un determinado generacion de pokemones
+. YO como jugador Pokemon Go
+. QUIERO filtrar los pokemones por "generacion"
+. PARA poder ver la lista de un determinado generacion de pokemones
 
 #### Historia 6: Filtrar por huevo
-YO como jugador Pokemon Go
-QUIERO filtrar los pokemones por "huevo"
-PARA poder ver la lista de un determinado tipo de huevo de pokemones
+. YO como jugador Pokemon Go
+. QUIERO filtrar los pokemones por "huevo"
+. PARA poder ver la lista de un determinado tipo de huevo de pokemones
 
 #### Historia 8: Ordenar pokemons mostrados
-YO como jugador de Pokemon Go
-QUIERO tener la opción de ordenar por nombres
-PARA verlos de forma ascendente y descendente
+. YO como jugador de Pokemon Go
+. QUIERO tener la opción de ordenar por nombres
+. PARA verlos de forma ascendente y descendente
 
 [Tablero en Trello](https://trello.com/b/TV3RTz0K/data-lovers) 
 
