@@ -39,13 +39,8 @@ const ShowDataEvolution = (DataEvolution) => {
     Iscandy = '';
   }
   DetailEvolution += `
-<<<<<<< HEAD
-  <div class="show-evolution">
-    <div class>
-=======
   <div>
       <div class="show-evolution">
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
       <p>${DataEvolution.num} ${Isname}</p>
       <img class="imgMin" data-id="${DataEvolution.num}" src="${rootImg}${DataEvolution.num}${extImg}">
       <p>${Iscandy}</p>
@@ -110,11 +105,7 @@ const ShowMoves = (arrMoves, arrtype) => {
 const ShowDetailPokemon = (objPokemon) => {
   let DetailPokemon = '';
   DetailPokemon += `
-<<<<<<< HEAD
-  <button id="btn_back" onclick="location.reload()">BACK</button>
-=======
   <button id="btn_back" onclick="location.reload()">BACK</button>  
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
     <section class="row">
       <div class = "col-3 section_info">
           <img id="${objPokemon.num}" class="imgShowPokemon" src="${objPokemon.img}">
@@ -123,23 +114,6 @@ const ShowDetailPokemon = (objPokemon) => {
           <p>${typesPokemon(objPokemon.type)}</p>
       </div>
       <div class="col-7 secdet_pokdatos">
-<<<<<<< HEAD
-        <header><h3>Data</h3></header>
-        <p>${objPokemon.about}</p>
-        <span>
-        <img src="img/location.png" class="icon-data"><strong> Region: </strong> ${objPokemon.generation.name}
-         <img src="img/icon-height.png" class="icon-data"><strong> Height: </strong> ${objPokemon.size.height}
-         <img src="img/icon-width.png" class="icon-data"><strong> Widht: </strong> ${objPokemon.size.weight} 
-      </span>
-      <h3><img src="img/icon-vulne.png" class="icon-data">  Vulnerable</h3>
-      <p>${typesPokemon(objPokemon.weaknesses)}</p>
-      <h3><img src="img/icon-resis.png" class="icon-data">  Resistant</h3>
-      <p>${typesPokemon(objPokemon.resistant)}</p>
-    </div>
-    </section>
-    <section class="row">
-      <header><h3>Stats</h3></header>
-=======
         <header><strong>Data</strong></header>
         <p>${objPokemon.about}</p>
         <span>
@@ -155,7 +129,6 @@ const ShowDetailPokemon = (objPokemon) => {
     </section>
     <section class="row">
       <header><strong>Stats</strong></header>
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
       <table class="col-6">
         <tbody>
           <tr>
@@ -183,11 +156,7 @@ const ShowDetailPokemon = (objPokemon) => {
       <table class="col-6">
         <tbody>
           <tr>
-<<<<<<< HEAD
-            <td>Chance</td>
-=======
             <td>Chance</td>            
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
             <td>${Math.round(objPokemon['spawn-chance'] * 100)}%</td>
           </tr>
           <tr>
@@ -200,7 +169,7 @@ const ShowDetailPokemon = (objPokemon) => {
           </tr>
           <tr>
             <td>Buddy walk</td>
-            <td>${objPokemon['buddy-distance-km']}km</td>
+            <td>${objPokemon['buddy-distance-km']}</td>
           </tr>
           <tr>
             <td>Egg</td>
@@ -210,13 +179,8 @@ const ShowDetailPokemon = (objPokemon) => {
       </table>
     </section>
     <section class="row">
-<<<<<<< HEAD
-      <header><h3>Evolution</h3></header>
-      <div class="section-evolution">${ShowEvolution(objPokemon.evolution, objPokemon.num)}</div>
-=======
       <header><strong>Evolution</strong></header>
       <div class="section-evolution">${ShowEvolution(objPokemon.evolution, objPokemon.num)}</div>      
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
     </section>
     <section class="row">
       <header><h3>All Moves</h3></header>
@@ -242,13 +206,8 @@ const ShowDetailPokemon = (objPokemon) => {
           ${ShowMoves(objPokemon['special-attack'], objPokemon.type)}
         </tbody>
       </table>
-<<<<<<< HEAD
-    </section>
-  <button id="btn_back" onclick="location.reload()">BACK</button>    
-=======
     </section>    
     <button id="btn_back" onclick="location.reload()">BACK</button>
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
   `;
   sectionDetail.innerHTML = DetailPokemon;
 };

@@ -1,6 +1,5 @@
-/* eslint-disable operator-assignment */
 // Funcion devuelve texto con primer caracter en mayuscula y el resto minuscula
-export const textUpperFirst = text => text.substring(0, 1).toUpperCase() + text.slice(1);
+export const textUpperFirst = (text) => text.substring(0, 1).toUpperCase() + text.slice(1);
 
 // Funcion para filtrar, recibe parametros data y condition
 // devuelve un arreglo con el filtro por tipo, egg y region
@@ -10,13 +9,13 @@ export const filterData = (data, condition) => {
   const conditionRegion = condition[2].value;
   let arrFilter = data;
   if (conditionType !== '' && conditionType !== 'all') {
-    arrFilter = arrFilter.filter(infoPokemon => infoPokemon.type.indexOf(conditionType) !== -1);
+    arrFilter = arrFilter.filter((infoPokemon) => infoPokemon.type.indexOf(conditionType) !== -1);
   }
   if (conditionEgg !== '' && conditionEgg !== 'all') {
-    arrFilter = arrFilter.filter(infoPokemon => infoPokemon.egg === conditionEgg);
+    arrFilter = arrFilter.filter((infoPokemon) => infoPokemon.egg === conditionEgg);
   }
   if (conditionRegion !== '' && conditionRegion !== 'all') {
-    arrFilter = arrFilter.filter(infoPokemon => infoPokemon.generation.name === conditionRegion);
+    arrFilter = arrFilter.filter((infoPokemon) => infoPokemon.generation.name === conditionRegion);
   }
   return arrFilter;
 };
@@ -25,17 +24,11 @@ export const filterData = (data, condition) => {
 export const sortData = (data, sortOrder) => {
   let newDataOrder;
   switch (sortOrder) {
-<<<<<<< HEAD
-    case 'a-z': newDataOrder = data.sort((a, b) => (a.name > b.name ? 1 : -1));
-      break;
-    case 'z-a': newDataOrder = data.sort((a, b) => (a.name < b.name ? 1 : -1));
-=======
     case 'a-z':
       newDataOrder = data.sort((a, b) => (a.name > b.name ? 1 : -1));
       break;
     case 'z-a':
       newDataOrder = data.sort((a, b) => (a.name < b.name ? 1 : -1));
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
       break;
     case 'numUp': newDataOrder = data.sort((a, b) => (a.num > b.num ? 1 : -1));
       break;
@@ -47,7 +40,7 @@ export const sortData = (data, sortOrder) => {
 };
 
 export const searchName = (data, property, inputText) => {
-  const searchForName = data.filter(element => (element[property]).indexOf(inputText) !== -1);
+  const searchForName = data.filter((element) => (element[property]).indexOf(inputText) !== -1);
   return searchForName;
 };
 
@@ -65,13 +58,9 @@ export const calcMoves = (arrmoves, arrType) => {
     } else {
       stab = element['base-damage'] * 1;
     }
-<<<<<<< HEAD
-    eps = (element.energy / element['move-duration-seg']) * eps;
-=======
     // eslint-disable-next-line operator-assignment
     eps = (element.energy / element['move-duration-seg']) * eps;
     // eslint-disable-next-line operator-assignment
->>>>>>> 75cc47009cd1153fa6b1e6f2744011cd99d282ef
     dps = (stab / element['move-duration-seg']) * dps;
     newElement.eps = eps;
     newElement.dps = dps;
