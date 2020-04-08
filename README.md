@@ -9,7 +9,7 @@
 * [3.2. Diseño de la Interfaz de Usuario](#3.2-Diseño-de-la-Interfaz-de-Usuario)
 * [3.2.1. Prototipo de baja fidelidad](#3.2.1-Prototipo-de-baja-fidelidad)
 * [3.2.2. Prototipo de alta fidelidad](#3.2.2-Prototipo-de-alta-fidelidad)
-* [3.2.3. Prototipo de alta fidelidad](#3.2.3-Proyecto-Final)
+* [3.2.3. Proyecto Final](#3.2.3-Proyecto-Final)
 * [4. Testeos de usabilidad](#4-testeos-de-usabilidad)
 * [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
 
@@ -97,8 +97,8 @@ Segunda Historia
 ![responsive](/src/screen/MOBILE-FINAL.PNG)
 
 ##### Segunda Historia
-![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE2-FINAL.PNG)
-![desktop](/src/screen/DESKTOP-DETALLE3-FINAL.PNG) ![desktop](/src/screen/DESKTOP-DETALLE4-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE1-FINAL.PNG) [desktop](/src/screen/DESKTOP-DETALLE2-FINAL.PNG)
+![desktop](/src/screen/DESKTOP-DETALLE3-FINAL.PNG) [desktop](/src/screen/DESKTOP-DETALLE4-FINAL.PNG)
 
 ![responsive](/src/screen/MOBILE-DETALLE1-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE2-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE3-FINAL.PNG) 
 ![responsive](/src/screen/MOBILE-DETALLE4-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE5-FINAL.PNG) ![responsive](/src/screen/MOBILE-DETALLE6-FINAL.PNG)
